@@ -1,0 +1,39 @@
+{
+    "name": "orger",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "storyboard": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "tilemap.g.jres",
+        "tilemap.g.ts",
+        "myItem.ts",
+        "myTree.ts",
+        "images.g.jres",
+        "images.g.ts",
+        "myStone.ts",
+        "myState.ts",
+        "myWood.ts",
+        "myStoneStaple.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v1.4.37",
+        "tag": "v1.4.37",
+        "commits": "https://github.com/microsoft/pxt-arcade/commits/9e35f5bd02fc8296ba29a4e8a326315f303ef384",
+        "target": "1.5.10",
+        "pxt": "6.12.17",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "tsprj"
+}
