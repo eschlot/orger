@@ -2,6 +2,7 @@ class myWood extends myItem
 {
     constructor(init_x: number, init_y:number) {
         super(init_x,init_y)
+        this.name = "Wood"
         this.img =assets.image`Wood`
         this.update()
     }
