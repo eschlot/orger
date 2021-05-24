@@ -25,19 +25,34 @@ function inReach (a_x: number, a_y: number, b_x: number, b_y: number):boolean {
 
 let state:myState = new myState()
 // Baeume
-for (let index = 0; index < 20; index++) {
+for (let index = 0; index < 125; index++) {
     let x = randint(0, 39)
     let y = randint(0, 24)
-    let item = new myTree(x,y)
+    let item = null
+    if (index<20)
+    {
+        item = new myTree(x,y)
+    }
+    else if (index < 50)
+    {
+        item = new myStone(x, y)
+    }
+    else if (index<75)
+    {
+        item = new myBerryBush(x,y)
+    }
+    else if (index <100)
+    {
+        item = new myIronOre(x,y)
+    }
+    else if (index<125)
+    {
+        item= new myCoal(x,y)
+    }
+    
     state.itemsInWorld.push(item)
 }
-// Steine
-for (let index = 0; index < 25; index++) {
-    let x = randint(0, 39)
-    let y = randint(0, 24)
-    let item2 = new myStone(x,y)
-    state.itemsInWorld.push(item2)
-}
+
 storyboard.registerScene("game", 
  function()
  {
@@ -113,21 +128,22 @@ let rowHeight: int16 = (scene.screenHeight() - rowStart) / rowNumbers
 let columnWidth: int16 = scene.screenWidth() / columnNumbers
 
 function menuPositionCalcReset() {
-    row = -1
+    row = 0
     column = 0
 }
 
 function menuTextPositionCalcNext(): [number, number] {
-    row = row + 1
+    
     if (row == rowNumbers) {
         row = 0
         column = column + 1
     }
     let x = column * columnWidth + columnOffset
     let y = rowStart + row * rowHeight
-    
+        
     console.logValue("menuTextPositionCalcNext:x", x)
     console.logValue("menuTextPositionCalcNext:y", y)
+    row = row + 1
     return [x, y]
 }
 

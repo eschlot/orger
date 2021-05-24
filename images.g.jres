@@ -29,6 +29,31 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "StoneStaple"
     },
+    "image7": {
+        "data": "hwQQABAAAAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d+d3d3d3d3J353d3d3dydyLid+d3d3d35+5353d3d+7u53fnd3d37i5+d+d3d35+7u4u53d3dy5+7id3d3d3d+fn53d3d34n5+7nd3d3fn537nd3d3d+cnd+d+d3d3J+d3d3d3d3d353d3dw==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "berrybush"
+    },
+    "image8": {
+        "data": "hwQQABAAAAB3d3d3d3d3d3d3d3d3d3d3d3fn7n53d3d3d+7i7nd3d3fnLiLufnd3d+ciIuLud3d35yIi4u53d3fnIiLi7nd3d+ciIuLud3d35y4i7n53d3d37uLud3d3d3fn7n53d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3dw==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "berrys"
+    },
+    "image9": {
+        "data": "hwQQABAAAAB3d3d3d8fMzHd3d3fMvMzMd3d3zL28y8x3d8zM28vLzHfHu83cy8zMd9u9S7TLzMy33d1LtMu8zLfd3Uu7zLzL20Td3My7vLvbRNTMzLy9u9tEtMzdu727203N3E20zbu73ctMRL3NvLfMzNzUzc3Md3fMzN3Ly8x3d3fHzMzMzA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "ironore"
+    },
+    "image10": {
+        "data": "hwQQABAAAAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d93dd3d3d3fX3d19d3d3d91ETX13d3fXTdREfXd3d9dERNR9d3d3191N3Xd3d3fX3d13d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3dw==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "iron"
+    },
+    "image11": {
+        "data": "hwQQABAAAAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3f3d3d3d3d/f/d3d3d3d3//9/d3d3d/f//393d3d39////3d3d3f/////f3d3d/////9/d3d39////393d3f3////d3d3d/f//393d3d3d/d/d3d3d3d3d3d3d3d3d3d3d3d3dw==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "coal"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
