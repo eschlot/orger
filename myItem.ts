@@ -25,4 +25,10 @@ class myItem {
         return [[],[]]
     }
 
+    public interactInInventory(state:myState):myState
+    {
+        return state
+    }
+
+
 }

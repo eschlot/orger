@@ -8,7 +8,7 @@ class myIronOre extends myItem {
 
 
     public interact(): [myItem[], myItem[]] {
-        return [[new myIron(this.x, this.y)], []]
+        return [[], [this]]
     }
 
 }

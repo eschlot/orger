@@ -173,7 +173,8 @@ storyboard.registerScene("inventory",
             group = []
         }
 
-
+        state.itemsGrouped=itemGroups
+        
         console.logValue("itemGroups.length", itemGroups.length)
 
 
@@ -224,6 +225,12 @@ storyboard.registerScene("inventory",
 
         controller.player1.onButtonEvent(ControllerButton.B, ControllerButtonEvent.Pressed, function() {
             storyboard.pop()  
+        })
+
+        controller.player1.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function() {
+            state = state.itemsGrouped[menuItemIndex][0].interactInInventory(state)
+            storyboard.pop()
+            storyboard.push("inventory")
         })
     }
 )
