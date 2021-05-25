@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "storyboard": "*"
+        "storyboard": "*",
+        "arcade-text": "github:microsoft/arcade-text#v1.3.0"
     },
     "files": [
         "main.blocks",

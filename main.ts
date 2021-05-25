@@ -1,25 +1,3 @@
-function inReach (a_x: number, a_y: number, b_x: number, b_y: number):boolean {
-
-    let _b_x = b_x*16+8
-    let _b_y = b_y*16+8
-
-    // console.logValue("_b_x", _b_x)
-    // console.logValue("a_x", a_x)
-    // console.logValue("_b_y", _b_y)
-    // console.logValue("a_y", a_y)
-
-    if (Math.abs(_b_x-a_x)<=8)
-    {
-        if (Math.abs(_b_y - a_y) <= 8)
-        {
-            // console.log("true")
-            return true
-        }
-    }
-    // console.log("false")
-    return false
-}
-
 
 
 
@@ -120,10 +98,10 @@ let menuItemIndexOld = 0
 
 let row: int16 = 0
 let column: int16 = 0
-let rowStart: int16 = 30
-let columnOffset: int16 = 30
+let rowStart: int16 = 15
+let columnOffset: int16 = 10
 let columnNumbers: int16 = 3
-let rowNumbers: int16 = 6
+let rowNumbers: int16 = 8
 let rowHeight: int16 = (scene.screenHeight() - rowStart) / rowNumbers
 let columnWidth: int16 = scene.screenWidth() / columnNumbers
 
@@ -167,8 +145,7 @@ function menuCaretPosition(entryNumber: number): [number, number] {
 storyboard.registerScene("inventory", 
     function()
     {
-        const title=sprites.create(img`.`)
-        title.say("Inventory")  
+        const title = textsprite.create("Inventory")
         title.left=0
         title.top=0
 
@@ -203,8 +180,7 @@ storyboard.registerScene("inventory",
         menuPositionCalcReset()
         itemGroups.forEach(function ( value:myItem[], index:number){
             let [x,y] = menuTextPositionCalcNext()
-            const entry = sprites.create(img`.`)
-            entry.say(value[0].name + " " + value.length)
+            const entry = textsprite.create(value[0].name + " " + value.length)
             entry.left = x
             entry.top = y
         })
@@ -233,7 +209,7 @@ storyboard.registerScene("inventory",
                 menuItemIndex=menuItemIndex-1
                 let [x, y] = menuCaretPosition(menuItemIndex)
                 cursor.left = x
-                cursor.top = y
+                cursor.top= y
             }
         })
 
@@ -252,3 +228,27 @@ storyboard.registerScene("inventory",
     }
 )
 storyboard.start("game")
+
+
+
+function inReach(a_x: number, a_y: number, b_x: number, b_y: number): boolean {
+
+    let _b_x = b_x * 16 + 8
+    let _b_y = b_y * 16 + 8
+
+    // console.logValue("_b_x", _b_x)
+    // console.logValue("a_x", a_x)
+    // console.logValue("_b_y", _b_y)
+    // console.logValue("a_y", a_y)
+
+    if (Math.abs(_b_x - a_x) <= 8) {
+        if (Math.abs(_b_y - a_y) <= 8) {
+            // console.log("true")
+            return true
+        }
+    }
+    // console.log("false")
+    return false
+}
+
+
