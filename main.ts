@@ -189,13 +189,13 @@ storyboard.registerScene("inventory",
 
         // This cursor will indicate which menu item is selected
         const cursor = sprites.create(img`
-        4 . . .
-        . 4 . .
-        . . 4 .
-        . . . 4
-        . . 4 .
-        . 4 . .
-        4 . . .
+            4 . . .
+            . 4 . .
+            . . 4 .
+            . . . 4
+            . . 4 .
+            . 4 . .
+            4 . . .
         `)
         
         menuItemIndex=0
